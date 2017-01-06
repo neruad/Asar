@@ -1,0 +1,37 @@
+﻿@using AsarGlobal.Web.App_Code
+
+<div class="bottom-section">
+    <div class="contact-section">
+        <div class="container">
+            <div class="contact-grids">
+                <div class="col-md-6 contact-grid">
+                    <h5>О Нас</h5>
+                    <p>ТОО "Asar Global Partners" - бизнес который работает</p>
+                    <a href="http://asarglobal.com" class="more">сайт компании<img src="~/Images/arrow.png"></a>
+                </div>
+                <div class="col-md-3 contact-grid">
+                    <h5>Контакты</h5>
+                    <p>Айдана</p>
+                    <div class="icon2">
+                        <p>
+                            <i class="fa fa-phone" aria-hidden="true"></i> @Constants.PhoneNumberFormatted
+                            <br/>
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:@Constants.Email">@Constants.Email</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-section">
+        <div class="container">
+            <div class="footer-left">
+                <p>
+                    Материалы по бизнес плану взяты с<a href="http://asarglobal.com" class="company-link" target="target_blank">asarglobal.com</a> &copy;@DateTime.Now.Year
+                </p>
+            </div>
+            <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,66 @@
+﻿@using AsarGlobal.Web.App_Code
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="~/Content/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href='https://fonts.google.com/specimen/Open+Sans' rel='stylesheet' type='text/css'>
+    @*<link rel="stylesheet" href="~/Content/flexslider.css" type="text/css" media="screen" />*@
+    <link href="~/Content/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/Content/owl.carousel.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="header" id="home">
+
+        <div class="header-top">
+            <div class="container">
+                <div class="icon">
+                    <ul>
+                        <li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:@Constants.Email">@Constants.Email&nbsp;</a></li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i> @Constants.PhoneNumberFormatted</li>
+                    </ul>
+                </div>
+                <div class="social-icons">
+                    <a href="@Constants.FacebookProfile"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="@Constants.GooglePlusProfile"><i class="fa fa-google-plus"></i></a>
+                    <a href="@Constants.TwitterProfile"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="container">
+            <div class="header-bottom">
+                <div class="logo">
+                    <h1><a href="http://asarglobal.com" title="ASAR GLOBAL PARTNERS">AGP</a></h1>
+                </div>
+                @{ Html.RenderPartial("_Menu"); }
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        @RenderBody()
+    </div>
+    @{ Html.RenderPartial("_Footer"); }
+    <script src="~/Scripts/jquery-1.9.1.min.js"></script>
+    <script src="~/Scripts/responsiveslides.min.js"></script>
+    <script src="~/Scripts/jquery.magnific-popup.js" type="text/javascript"></script>
+    <script src="~/Scripts/owl.carousel.js" type="text/javascript"></script>
+    <script type="text/javascript" src="~/Scripts/move-top.js"></script>
+    <script type="text/javascript" src="~/Scripts/easing.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.mixitup.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/script.js"></script>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    @{ Html.RenderPartial("GoogleAnalytics"); }
+</body>
+</html>

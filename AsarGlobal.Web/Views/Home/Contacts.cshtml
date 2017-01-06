@@ -1,0 +1,43 @@
+﻿@using AsarGlobal.Web.App_Code;
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="blog-content">
+    <div class="container">
+        <div class="wrapper">
+            <div class="contact">
+                <h3>Контакты</h3>
+                <div class="section group">
+                    <div class="col span_1_of_2">
+                        <div class="company_address">
+                            <h2>Мои контакты</h2>
+                            <p>Айдана,</p>
+                            <p>Партнер компании <a href="http://asarglobal.com" target="_blank">ТОО "AGP"</a></p>
+                            <p>Моб.: @Constants.PhoneNumberFormatted</p>
+                            <p>Email: <a href="mailto:@Constants.Email">@Constants.Email</a></p>
+                            <p>Следите в: <a href="@Constants.FacebookProfile">Facebook</a> , <a href="@Constants.TwitterProfile">Twitter</a></p>
+                        </div>
+                        <div class="company_address">
+                            <h2>Адрес компани</h2>
+                            <p>ТОО "ASAR GLOBAL PARTNERS" </p>
+                            <p>ул. Зенкова 13, уг. ул. Гоголя</p>
+                            <p>кабинет №1, 3 этаж</p>
+                            <p>с 11:00 до 20:00 часов, без выходных</p>
+                            <p>Сайт: <a href="http://asarglobal.com">asarglobal.com</a></p>
+                        </div>
+                        <div class="company_address">
+                            <h2>Найти можно здесь</h2>
+                            <div class="contact-map">
+                                <small>
+                                    <a href="https://yandex.ru/maps/?um=constructor%3APeylkY7ByPfvbbBiPwNrZwBShsx6vD4k&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?sid=PeylkY7ByPfvbbBiPwNrZwBShsx6vD4k&amp;width=345&amp;height=150&amp;lang=ru_RU&amp;sourceType=constructor" style="color: #C9C9C9;text-align:left;font-size:13px">Подробнее</a>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

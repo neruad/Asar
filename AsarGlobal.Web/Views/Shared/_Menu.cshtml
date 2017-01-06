@@ -1,0 +1,40 @@
+﻿@using AsarGlobal.Web.App_Code.Helpers;
+
+<div class="top-menu">
+    <span class="menu"><img src="~/Images/nav-icon.png" alt="" /></span>
+    <ul>
+        <nav class="cl-effect-5">
+            <li>
+                <a href="~/"
+                   class="@(ViewContext.IsSelected(controllers: "Home", actions: "Index"))">
+                    <span data-hover="главная">главная</span>
+                </a>
+            </li>
+            <li>
+                <a href="~/#marketing"
+                   class="@ViewContext.IsSelected(controllers: "Marketing")">
+                    <span data-hover="маркетинг">маркетинг</span>
+                </a>
+            </li>
+            <li>
+                <a href="~/Blogs/List"
+                   class="@ViewContext.IsSelected(controllers: "Blogs")">
+                    <span data-hover="Блог">Блог</span>
+                </a>
+            </li>
+            <li>
+                <a href="~/FAQ"
+                   class="@ViewContext.IsSelected(controllers: "FAQ")">
+                    <span data-hover="вопросы-ответы">вопросы-ответы</span>
+                </a>
+            </li>
+            <li>
+                <a href="~/Home/Contacts"
+                   class="@ViewContext.IsSelected(controllers: "Home", actions: "Contacts")">
+                    <span data-hover="контакты">контакты</span>
+                </a>
+            </li>
+        </nav>
+    </ul>
+    <div class="clearfix"></div>
+</div>
