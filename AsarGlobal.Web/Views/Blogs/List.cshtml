@@ -1,4 +1,5 @@
-﻿@{
+﻿@using AsarGlobal.Web.App_Code
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -18,22 +19,24 @@
                             </div>
                             <div class="blog_desc">
                                 <div class="blog_heading">
-                                    <a href="single.html">Мой первый блог</a>
+                                    <a href="~/Blogs/Content?name=about-vip">О пакете VIP</a>
                                     <p>опубликован 5 января 2017 г.</p>
                                 </div>
                                 <div class="section group example">
                                     <div class="col blog_1_of_2">
                                         <div class="blog_img">
-                                            <a href="single.html">
+                                            <a href="~/Blogs/Content?name=about-vip">
                                                 <img src="~/Images/pic13.jpg" alt="image" class="img-responsive zoom-img">
                                             </a>
                                         </div>
                                     </div>
                                     <div class="col blogdata_1_of_2">
                                         <div class="blog_data">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                                            <p>
+                                                Мы сейчас работаем с VIP пакетом. Здесь все могут работать в одной системе и быстро зарабатывать
+                                            </p>
                                             <div class="more">
-                                                <span><a class="button outline-outward hvr-rectangle-in" href="single.html">Read More</a></span>
+                                                <span><a class="button outline-outward hvr-rectangle-in" href="~/Blogs/Content?name=about-vip">читать...</a></span>
                                             </div>
                                         </div>
                                     </div>
@@ -48,7 +51,7 @@
                 
                 <div class="col-md-4 blog-grid1">
                     <div class="rsidebar span_1_of_3">
-                        <a class="twitter-timeline" data-lang="ru" href="https://twitter.com/aidana_agp">Tweets by aidana_agp</a>
+                        <a class="twitter-timeline" data-lang="ru" href="@Constants.TwitterProfile">Tweets by aidana_agp</a>
                     </div>
                 </div>
             </div>

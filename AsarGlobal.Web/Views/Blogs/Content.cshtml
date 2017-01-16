@@ -1,0 +1,13 @@
+﻿@using AsarGlobal.Web.App_Code
+@model AsarGlobal.Web.Models.Blogs.StaticBlogViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+<div class="blog-content">
+    @Html.Raw(File.ReadAllText(Server.MapPath((Model.ContentPath + Model.Name + ".html")), System.Text.Encoding.Default));
+</div>

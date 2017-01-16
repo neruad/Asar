@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AsarGlobal.Web.Models.Blogs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,6 +14,15 @@ namespace AsarGlobal.Web.Controllers
         {
             ViewBag.Title = "Блог";
             return View();
+        }
+
+        public ActionResult Content(string name)
+        {
+            ViewBag.Title = "Блог";
+
+            var model = new StaticBlogViewModel();
+            model.Name = name;
+            return View(model);
         }
     }
 }

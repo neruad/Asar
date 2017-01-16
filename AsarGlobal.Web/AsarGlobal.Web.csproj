@@ -97,6 +97,7 @@
       <HintPath>..\packages\NLog.4.4.1\lib\net40\NLog.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.IO, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\net40\System.IO.dll</HintPath>
       <Private>True</Private>
@@ -232,12 +233,14 @@
     <Content Include="Scripts\owl.carousel.js" />
     <Content Include="Scripts\responsiveslides.min.js" />
     <Content Include="Scripts\script.js" />
+    <Content Include="Views\Blogs\Static\about-vip.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Code\Constants.cs" />
     <Content Include="App_Code\Common\Formatter.cs" />
     <Content Include="App_Code\Helpers\MenuHelper.cs" />
+    <Content Include="App_Code\Common\Parser.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BlogsController.cs" />
     <Compile Include="Controllers\FAQController.cs" />
@@ -246,6 +249,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Blogs\BlogsViewModel.cs" />
+    <Compile Include="Models\Blogs\StaticBlogViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -266,6 +271,7 @@
     <Content Include="Views\Marketing\Business.cshtml" />
     <Content Include="Views\Marketing\VIP.cshtml" />
     <Content Include="Views\FAQ\Index.cshtml" />
+    <Content Include="Views\Blogs\Content.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -276,7 +282,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
