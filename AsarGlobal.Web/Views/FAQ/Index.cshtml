@@ -1,4 +1,5 @@
-﻿@{
+﻿@using AsarGlobal.Web.App_Code
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -10,41 +11,45 @@
         </div>
         <div class="section group">
             <div class="rsidebar span_1_of_3 panel-group" id="accordion">
-                <h4>Задавайте вопросы в наших группах социальных сетей, а мы подготовим на них ответы</h4>
+                <h4>
+                    Задавайте вопросы в наших группах социальных сетей (<a href="@Constants.FacebookProfile">Facebook</a>,
+                    <a href="@Constants.TwitterProfile">Twitter</a>,
+                    <a href="@Constants.TelegramChannel">Telegram</a>), а мы подготовим на них ответы
+                </h4>
                 @*<ul>
-                    <li>
-                        <span data-toggle="collapse" data-parent="#accordion" data-target="#collapse1">
-                            Вопрос 1
-                        </span>
-                    </li>
-                    <div id="collapse1" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            ответ 1
+                        <li>
+                            <span data-toggle="collapse" data-parent="#accordion" data-target="#collapse1">
+                                Вопрос 1
+                            </span>
+                        </li>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                ответ 1
+                            </div>
                         </div>
-                    </div>
 
-                    <li>
-                        <span data-toggle="collapse" data-parent="#accordion" data-target="#collapse2">
-                            Вопрос 2
-                        </span>
-                    </li>
-                    <div id="collapse2" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            ответ 2
+                        <li>
+                            <span data-toggle="collapse" data-parent="#accordion" data-target="#collapse2">
+                                Вопрос 2
+                            </span>
+                        </li>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                ответ 2
+                            </div>
                         </div>
-                    </div>
 
-                    <li>
-                        <span data-toggle="collapse" data-parent="#accordion" data-target="#collapse3">
-                            Вопрос 3
-                        </span>
-                    </li>
-                    <div id="collapse3" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            ответ 3
+                        <li>
+                            <span data-toggle="collapse" data-parent="#accordion" data-target="#collapse3">
+                                Вопрос 3
+                            </span>
+                        </li>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                ответ 3
+                            </div>
                         </div>
-                    </div>
-                </ul>*@
+                    </ul>*@
             </div>
         </div>
     </div>
